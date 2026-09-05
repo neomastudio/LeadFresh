@@ -1,0 +1,13 @@
+@use './variable';
+@use './media';
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    background-color: var(--dark-navy) !important;
+}

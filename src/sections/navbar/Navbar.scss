@@ -1,0 +1,215 @@
+@use '../../styles/mixins' as m ;
+
+.navbar {
+  width: 100%;
+  padding: 0%;
+  background-color: transparent;
+  position: absolute;
+  top: 3%;
+  left: 0%;
+  z-index: 1000;
+  .navbar-bg {
+    width: 100%;
+    height: 100%;
+    padding: 0px 25px;
+    font-size: 1em;
+    .icon-img {
+      width: 70%;
+    }
+    .menu-list {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      gap: 39px;
+      padding-top: 18px;
+      a {
+        text-decoration: none;
+        color: var(--white);
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: var(--white);
+            bottom: -20%;
+            left: 50%;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        &:hover::before {
+            opacity: 1;
+        }
+      }
+      a:nth-child(3) {
+        word-spacing: 0.8px;
+      }
+    }
+    .navbar-btn {
+      @extend %flex-center;
+      padding-top: 18px;
+      gap: 8px;
+      a {
+        padding: 5px 18px;
+        border-radius: 9999px;
+        text-decoration: none;
+        word-spacing: -1px;
+      }
+      a:first-child {
+        color: var(--dark-navy);
+        background-color: var(--white);
+      }
+      a:nth-child(2) {
+        color: var(--white);
+        background:
+          linear-gradient(#00011970, #00011970) padding-box,
+          linear-gradient(154deg, #89e24e, #56ddb8ce, #56ddd2ce) border-box;
+          box-shadow: inset 0px 0px 15px #56ddb99f;
+      }
+    }
+  }
+}
+
+// Tablet & Mobile Navbar
+.hamburger,
+.mobile-menu,
+.menu-overlay {
+  display: none;
+}
+@media (max-width: 991px) {
+  .navbar {
+    .navbar-bg {
+      position: relative;
+      .row {
+        display: flex;
+        align-items: center;
+      }
+      .icon-img {
+        width: 180px;
+      }
+      .menu-list {
+        display: none;
+      }
+      .navbar-btn {
+        padding-top: 0;
+        justify-content: flex-end;
+        .start-free {
+          display: none;
+        }
+      }
+      .hamburger {
+        display: flex;
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border: none;
+        background: transparent;
+        color: var(--white);
+        z-index: 1002;
+        i {
+          font-size: 1.8rem;
+        }
+      }
+      .row {
+        .col-3:first-child {
+          position: static;
+        }
+        .icon-img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .navbar-btn {
+        a:first-child {
+          padding: 5px 16px;
+        }
+      }
+    }
+  }
+
+  .menu-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      opacity 0.35s ease,
+      visibility 0.35s ease;
+    z-index: 1000;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--dark-navy);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+    z-index: 1001;
+    a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 1.05rem;
+      transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+      &:hover {
+        color: var(--mint);
+        transform: translateX(4px);
+      }
+    }
+    &.active {
+      transform: translateX(0);
+    }
+  }
+}
+
+// Small Mobile
+@media (max-width: 480px) {
+  .navbar {
+    .navbar-bg {
+      padding: 0 15px;
+      .icon-img {
+        width: 160px;
+      }
+      .hamburger {
+        left: 15px;
+      }
+      .navbar-btn {
+        a:first-child {
+          padding: 5px 12px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  .mobile-menu {
+    width: 70vw;
+  }
+}
