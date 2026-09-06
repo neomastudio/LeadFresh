@@ -10,4 +10,10 @@
 body {
     min-width: 320px;
     background-color: var(--dark-navy) !important;
+    scroll-behavior: smooth;
+}
+
+.line-shine {
+  width: 100%;
+  margin: 0% auto;
 }

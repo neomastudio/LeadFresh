@@ -1,139 +1,6 @@
 @use "../../styles/mixins" as m;
 
 .hero {
-  @media (max-width: 991px) {
-    .hero {
-      min-height: auto;
-      height: auto;
-      padding-bottom: 40px;
-      &__content {
-        margin-top: -30%;
-        .contents {
-          padding-left: 20px;
-          padding-right: 20px;
-          h1 {
-            font-size: clamp(1.6rem, 5vw, 2rem);
-          }
-          &__caption {
-            width: 98%;
-          }
-        }
-        .dashboard-pic {
-          width: min(100%, 520px);
-          margin: 90px auto 90px auto;
-          transform: none;
-        }
-        .tape {
-          width: 90%;
-        }
-      }
-    }
-  }
-  @media (max-width: 767px) {
-    .hero {
-      min-height: 100vh;
-      height: auto;
-      padding-bottom: 25px;
-      &__content {
-        margin-top: 30%;
-        .row {
-          flex-direction: column;
-        }
-        .contents {
-          width: 100%;
-          padding: 0 20px;
-          align-items: center;
-          text-align: center;
-          gap: 12px;
-          &__head {
-            padding: 5px 14px;
-            i {
-              font-size: 1em;
-            }
-            p {
-              font-size: 0.8em;
-            }
-          }
-          h1 {
-            width: 100%;
-            font-size: clamp(1.6rem, 9vw, 2rem);
-            line-height: 1.15;
-            margin: 0;
-            .selected-header {
-              word-spacing: -4px;
-            }
-          }
-          &__caption {
-            width: 90%;
-            font-size: 0.9rem;
-            line-height: 1.7;
-            margin: 0 auto;
-          }
-          &__btn {
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-top: 10px;
-            width: 100%;
-            gap: 10px;
-            a {
-              padding: 8px 12px;
-            }
-          }
-          &__teammate {
-            padding-left: 0;
-            width: 100%;
-            img {
-              width: min(70%, 250px);
-              height: auto;
-            }
-          }
-        }
-        .dashboard-pic {
-          width: min(90%, 430px);
-          height: auto;
-          margin: 35px auto 0;
-          transform: none;
-          filter: drop-shadow(0px 3px 6px #56ddb97c);
-        }
-        .tape {
-          width: 100%;
-          margin-top: 30px;
-          padding: 12px 20px;
-          &__track {
-            gap: 30px;
-            img {
-              width: 50px;
-            }
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 480px) {
-    .hero {
-      &__content {
-        .contents {
-          padding: 0 15px;
-          h1 {
-            font-size: clamp(1.3rem, 9vw, 1.8rem);
-          }
-          &__caption {
-            font-size: 0.82rem;
-          }
-          &__btn {
-            a {
-              font-size: 0.85rem;
-              padding: 7px 10px;
-            }
-          }
-        }
-        .dashboard-pic {
-          width: min(92%, 360px);
-        }
-      }
-    }
-  }
   @extend %container-style;
   min-height: 100vh;
   display: flex;
@@ -172,12 +39,13 @@
             border-box;
         @extend %flex-center;
         flex-direction: row;
-        gap: 1px;
+        gap: -1px;
+        font-family: var(--font-cantarell);
         i {
           font-size: 1.3em;
         }
         p {
-          font-size: 1em;
+          font-size: 0.9em;
           text-transform: uppercase;
         }
         p,
@@ -210,11 +78,13 @@
           color: transparent;
           -webkit-text-fill-color: transparent;
           word-spacing: -7px;
+          font-family: var(--font-poppins);
         }
       }
       &__caption {
         color: var(--white);
         width: 85%;
+        font-family: var(--font-plus-jakarta-sans);
       }
       &__btn {
         display: flex;
@@ -226,9 +96,13 @@
           text-decoration: none;
           @extend %flex-center;
           flex-direction: row;
-          gap: 10px;
+          gap: 8px;
           padding: 6px 12px;
           border-radius: 10px;
+          font-family: var(--font-poppins);
+          font-weight: bold;
+          word-spacing: -1px;
+          transition: all 0.5s ease;
         }
         a:first-child {
           color: var(--dark-navy);
@@ -239,10 +113,16 @@
             var(--turquoise)
           );
         }
+        a:hover:first-child {
+          background:linear-gradient(120deg,var(--lime),var(--lime));
+        }
         a:nth-child(2) {
           color: var(--white);
           box-shadow: inset 0px 0px 15px #56ddb99f;
           border: 1px solid var(--mint);
+        }
+        a:hover:nth-child(2) {
+          box-shadow: inset 0px 0px 30px #56ddb9dc;
         }
       }
       &__teammate {
@@ -281,7 +161,7 @@
       mask-image: linear-gradient(to right, var(--dark-navy) 40%, transparent);
       &__track {
         display: flex;
-        justify-content: first baseline;
+        justify-content: flex-start;
         align-content: center;
         gap: 50px;
         img {
@@ -307,3 +187,4 @@
     }
   }
 }
+

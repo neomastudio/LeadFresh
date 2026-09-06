@@ -2,63 +2,6 @@
 
 .feature {
   @extend %container-style;
-  @media (max-width: 768px ){
-    margin-top: 0% !important;
-    &__content {
-      margin-top: 0px;
-      .contents-hd {
-        text-align: center;
-        margin-bottom: 25px;
-        h2 {
-          font-size: 1.4em !important;
-          margin: 0%;
-        }
-        p {
-          font-size: 0.9em;
-          width: 90% !important;
-        }
-      }
-      .cart {
-        width: 80%;
-        margin: 10px auto;
-        &__titling {
-          h3 {
-            font-size: 1.2em !important;
-          }
-        }
-        &__img {
-          img {
-            width: 100% !important;
-            margin: 10% auto;
-          }
-          .image-features-one{
-            width: 70% !important;
-            margin: 0%;
-          }
-          .image-features-two {
-            margin: 0%;
-          }
-        }
-      }
-      .feaBox {
-        &__mobile {
-          .box {
-            .box-child {
-              h3 {
-                font-size: 1em !important;
-              }
-              p {
-                font-size: .7em !important;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 991px) {
-    margin-top: -38%;
-  }
   &__background {
     background-image: url("/images/feature-bg.png");
     @extend %container-bg-style;
@@ -77,6 +20,7 @@
       h2 {
         font-size: 2.3em;
         color: var(--white);
+        font-family: var(--font-poppins);
         .selected-header {
           background: linear-gradient(
             90deg,
@@ -94,6 +38,7 @@
         color: var(--white);
         text-align: center;
         width: 60%;
+        font-family: var(--font-plus-jakarta-sans);
       }
     }
     .cart {
@@ -116,7 +61,8 @@
         }
         h3 {
           color: var(--white);
-          font-size: 1.7em;
+          font-size: 1.6em;
+          font-family: var(--font-poppins);
         }
       }
       &__paragraph {
@@ -124,6 +70,7 @@
         p {
           color: var(--white);
           font-size: 1em;
+          font-family: var(--font-plus-jakarta-sans);
         }
       }
       &__img {
@@ -140,8 +87,6 @@
       }
     }
     .feaBox {
-      // background-color: var(--dark-navy);
-      backdrop-filter: blur(4px);
       padding: 65px 0px;
       @extend %flex-center;
       flex-direction: column;
@@ -179,11 +124,13 @@
             border-radius: 15px;
             height: 100px;
             h3 {
-              font-size: 1.5em;
+              font-size: 1.3em;
               word-spacing: -3px;
+              font-family: var(--font-poppins);
             }
             p {
               font-size: 0.8em;
+              font-family: var(--font-plus-jakarta-sans);
             }
           }
         }
@@ -205,55 +152,6 @@
         width: 100%;
       }
     }
-    @media (max-width: 991px) {
-      .feaBox {
-        padding: 40px 20px;
-        &__desktop {
-          display: none;
-        }
-        &__mobile {
-          display: block;
-          width: 100%;
-          .swiper {
-            width: 100%;
-          }
-          .swiper-slide {
-            height: auto;
-            display: flex;
-          }
-          .box {
-            width: 100%;
-            flex-shrink: 0;
-            border-radius: 15px;
-            border-left: 4px solid;
-            position: relative;
-            &::before,
-            &::after {
-              display: none;
-            }
-            .box-child {
-              width: 100%;
-              height: 100px;
-              color: var(--white);
-              border: 1px solid #ffffff4d;
-              box-shadow: inset -9px -7px 13px #56ddd22f;
-              padding: 19px 13px 0px 10px;
-              border-radius: 15px;
-              h3 {
-                font-size: 1.3em;
-                word-spacing: -2px;
-              }
-              p {
-                font-size: 0.8em;
-              }
-            }
-          }
-        }
-      }
-    }
-    .line-shine {
-      width: 100%;
-      backdrop-filter: blur(5px);
-    }
   }
 }
+

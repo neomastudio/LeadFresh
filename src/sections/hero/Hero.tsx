@@ -18,7 +18,7 @@ function Hero() {
         <div className="hero__background"></div>
         <div className="hero__content">
           <div className="row">
-            <div className="col-12 col-md-6 ps-0">
+            <div className="col-12 col-md-6 ps-md-0">
               <div className="contents">
                 <div className="contents__head">
                   <i className="bi bi-stars"></i>
@@ -50,7 +50,7 @@ function Hero() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 ps-0">
+            <div className="col-12 col-md-6 ps-md-0">
               <img src="/images/dashboard-pic.png" className="dashboard-pic" />
             </div>
           </div>
@@ -62,7 +62,6 @@ function Hero() {
                     {logos.map((logo: string, index: number) => (
                       <img key={index} src={logo} alt="Company Logo" />
                     ))}
-
 
                     {logos.map((logo: string, index: number) => (
                       <img
@@ -78,7 +77,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <img src="/images/line-shine.png" className="d-block d-md-none mt-5" width={400}/>
+      <img src="/images/line-shine.png" className="d-block d-md-none line-shine" style={{'marginTop': '50px'}}/>
     </>
   );
 }
