@@ -9,8 +9,11 @@
       .contents {
         padding-left: 20px;
         padding-right: 20px;
+        &__head {
+          padding: 0px 13px !important;
+        }
         h1 {
-          font-size: clamp(1.6rem, 5vw, 2rem);
+          font-size: clamp(1.6rem, 5vw, 2rem) !important;
         }
         &__caption {
           width: 98%;
@@ -22,7 +25,7 @@
         transform: none;
       }
       .tape {
-        width: 90%;
+        width: 90% ;
       }
     }
   }

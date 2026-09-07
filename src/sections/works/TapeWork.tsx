@@ -12,10 +12,10 @@ interface WorkItem {
 }
 
 const workData: WorkItem[] = [
-  { id: 1, title: "No Credit Card required", description: "3-day free trial", icon: "/images/works-section-photo/bottom-logo-1.png" },
-  { id: 2, title: "Cancel anything", description: "No long-term commitment", icon: "/images/works-section-photo/bottom-logo-2.png" },
-  { id: 3, title: "Your data is secure", description: "We respect your privacy", icon: "/images/works-section-photo/bottom-logo-3.png" },
-  { id: 4, title: "Human support", description: "we're here to help", icon: "/images/works-section-photo/bottom-logo-4.png" },
+  { id: 1, title: "No Credit Card required", description: "3-day free trial", icon: "/LeadFresh/images/works-section-photo/bottom-logo-1.png" },
+  { id: 2, title: "Cancel anything", description: "No long-term commitment", icon: "/LeadFresh/images/works-section-photo/bottom-logo-2.png" },
+  { id: 3, title: "Your data is secure", description: "We respect your privacy", icon: "/LeadFresh/images/works-section-photo/bottom-logo-3.png" },
+  { id: 4, title: "Human support", description: "we're here to help", icon: "/LeadFresh/images/works-section-photo/bottom-logo-4.png" },
 ];
 
 const TapeWork = () => {

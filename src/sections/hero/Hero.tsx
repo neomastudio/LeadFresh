@@ -5,11 +5,11 @@ import Navbar from "../navbar/Navbar";
 
 function Hero() {
   const logos: string[] = [
-    "/images/livestor.png",
-    "/images/Mojo.png",
-    "/images/carv.png",
-    "/images/Aircall.png",
-    "/images/eec.png",
+    "/LeadFresh/images/livestor.png",
+    "/LeadFresh/images/Mojo.png",
+    "/LeadFresh/images/carv.png",
+    "/LeadFresh/images/Aircall.png",
+    "/LeadFresh/images/eec.png",
   ];
   return (
     <>
@@ -46,12 +46,12 @@ function Hero() {
                   </a>
                 </div>
                 <div className="contents__teammate">
-                  <img src="/images/Frame.png" />
+                  <img src="/LeadFresh/images/Frame.png" />
                 </div>
               </div>
             </div>
             <div className="col-12 col-md-6 ps-md-0">
-              <img src="/images/dashboard-pic.png" className="dashboard-pic" />
+              <img src="/LeadFresh/images/dashboard-pic.png" className="dashboard-pic" />
             </div>
           </div>
           <div className="row">
@@ -77,7 +77,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <img src="/images/line-shine.png" className="d-block d-md-none line-shine" style={{'marginTop': '50px'}}/>
+      <img src="/LeadFresh/images/line-shine.png" className="d-block d-md-none line-shine" style={{'marginTop': '50px'}}/>
     </>
   );
 }

@@ -33,7 +33,7 @@ function Working() {
                     }}
                   >
                     <span className="cart__head">
-                      <img src="/images/works-section-photo/cart-logo-1.png" />
+                      <img src="/LeadFresh/images/works-section-photo/cart-logo-1.png" />
                       <h3>Detect Signals</h3>
                     </span>
                     <p>
@@ -45,7 +45,7 @@ function Working() {
                       <p>Live & always on</p>
                     </span>
                     <img
-                      src="/images/works-section-photo/cart-pic-1.png"
+                      src="/LeadFresh/images/works-section-photo/cart-pic-1.png"
                       className="cartImg"
                     />
                     <span className="box-statist d-none d-md-flex">
@@ -70,8 +70,8 @@ function Working() {
                     }}
                   >
                     <span className="cart__head">
-                      <img src="/images/works-section-photo/cart-logo-2.png" className="d-none d-md-block"/>
-                      <img src="/images/works-section-photo/icon-2.png" className="d-block d-md-none"/>
+                      <img src="/LeadFresh/images/works-section-photo/cart-logo-2.png" className="d-none d-md-block"/>
+                      <img src="/LeadFresh/images/works-section-photo/icon-2.png" className="d-block d-md-none"/>
                       <h3>AI Scores & Ranks</h3>
                     </span>
                     <p>
@@ -79,11 +79,11 @@ function Working() {
                       by conversion potential.
                     </p>
                     <img
-                      src="/images/works-section-photo/cart-pic-2.png"
+                      src="/LeadFresh/images/works-section-photo/cart-pic-2.png"
                       className="cartImg d-none d-md-block"
                     />
                     <img
-                      src="/images/works-section-photo/photo-2.png"
+                      src="/LeadFresh/images/works-section-photo/photo-2.png"
                       className="cartImg d-block d-md-none"
                     />
                     <span className="box-shield d-none d-md-flex">
@@ -112,8 +112,8 @@ function Working() {
                     }}
                   >
                     <span className="cart__head">
-                      <img src="/images/works-section-photo/cart-logo-3.png" className="d-none d-md-block" />
-                      <img src="/images/works-section-photo/icon-3.png" className="d-block d-md-none" />
+                      <img src="/LeadFresh/images/works-section-photo/cart-logo-3.png" className="d-none d-md-block" />
+                      <img src="/LeadFresh/images/works-section-photo/icon-3.png" className="d-block d-md-none" />
                       <h3>Verify & Enrich</h3>
                     </span>
                     <p>
@@ -121,11 +121,11 @@ function Working() {
                       right people.
                     </p>
                     <img
-                      src="/images/works-section-photo/cart-pic-3.png"
+                      src="/LeadFresh/images/works-section-photo/cart-pic-3.png"
                       className="cartImg d-none d-md-block"
                     />
                     <img
-                      src="/images/works-section-photo/photo-3.png"
+                      src="/LeadFresh/images/works-section-photo/photo-3.png"
                       className="cartImg d-block d-md-none"
                     />
                     <span className="box-shield d-none d-md-flex">
@@ -151,17 +151,17 @@ function Working() {
                     }}
                   >
                     <span className="cart__head">
-                      <img src="/images/works-section-photo/cart-logo-4.png" className="d-none d-md-block" />
-                      <img src="/images/works-section-photo//icon-4.png" className="d-block d-md-none" />
+                      <img src="/LeadFresh/images/works-section-photo/cart-logo-4.png" className="d-none d-md-block" />
+                      <img src="/LeadFresh/images/works-section-photo//icon-4.png" className="d-block d-md-none" />
                       <h3>Engage & Growth</h3>
                     </span>
                     <p>Leads are delivered in your plan, ready for outreach.</p>
                     <img
-                      src="/images/works-section-photo/cart-pic-4.png"
+                      src="/LeadFresh/images/works-section-photo/cart-pic-4.png"
                       className="cartImg d-none d-md-block"
                     />
                     <img
-                      src="/images/works-section-photo/photo-4.png"
+                      src="/LeadFresh/images/works-section-photo/photo-4.png"
                       className="cartImg d-block d-md-none"
                     />
                   </div>

@@ -3,7 +3,7 @@
 .feature {
   @extend %container-style;
   &__background {
-    background-image: url("/images/feature-bg.png");
+    background-image: url("/LeadFresh/images/feature-bg.png");
     @extend %container-bg-style;
   }
   &__content {

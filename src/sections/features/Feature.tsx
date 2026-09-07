@@ -26,7 +26,7 @@ function Features() {
             <div className="col-12 col-md-6">
               <div className="cart">
                 <div className="cart__titling">
-                  <img src="/images/match.png" />
+                  <img src="/LeadFresh/images/match.png" />
                   <h3>AI Matching</h3>
                 </div>
                 <div className="cart__paragraph">
@@ -36,21 +36,21 @@ function Features() {
                   </p>
                 </div>
                 <div className="cart__img">
-                  <img src="/images/pic-match.png" />
+                  <img src="/LeadFresh/images/pic-match.png" />
                 </div>
               </div>
             </div>
             <div className="col-12 col-md-4">
               <div className="cart">
                 <div className="cart__titling">
-                  <img src="/images/scorin.png" />
+                  <img src="/LeadFresh/images/scorin.png" />
                   <h3>Intent Scoring</h3>
                 </div>
                 <div className="cart__paragraph">
                   <p>Identify high-intent companies most likely to convert.</p>
                 </div>
                 <div className="cart__img">
-                  <img src="/images/pic-scorin.png" />
+                  <img src="/LeadFresh/images/pic-scorin.png" />
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ function Features() {
             <div className="col-12 col-md-4">
               <div className="cart">
                 <div className="cart__titling">
-                  <img src="/images/signal.png" />
+                  <img src="/LeadFresh/images/signal.png" />
                   <h3>Real-Time Signals</h3>
                 </div>
                 <div className="cart__paragraph">
@@ -69,7 +69,7 @@ function Features() {
                 </div>
                 <div className="cart__img">
                   <img
-                    src="/images/pic-signal.png"
+                    src="/LeadFresh/images/pic-signal.png"
                     className="image-features-one"
                   />
                 </div>
@@ -78,7 +78,7 @@ function Features() {
             <div className="col-12 col-md-6">
               <div className="cart">
                 <div className="cart__titling">
-                  <img src="/images/maker-con.png" />
+                  <img src="/LeadFresh/images/maker-con.png" />
                   <h3>Decision-Maker Contacts</h3>
                 </div>
                 <div className="cart__paragraph">
@@ -86,7 +86,7 @@ function Features() {
                 </div>
                 <div className="cart__img">
                   <img
-                    src="/images/pic-maker.png"
+                    src="/LeadFresh/images/pic-maker.png"
                     className="image-features-two"
                   />
                 </div>
@@ -95,7 +95,7 @@ function Features() {
 
           </div>
           <FeaBox/>
-          <img src="/images/line-shine.png" className="line-shine d-none d-md-block"/>
+          <img src="/LeadFresh/images/line-shine.png" className="line-shine d-none d-md-block"/>
         </div>
       </div>
     </>

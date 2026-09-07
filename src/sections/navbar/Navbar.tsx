@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   useEffect(() => {
     if (menuOpen) {
@@ -30,7 +30,7 @@ const Navbar = () => {
 
         <div className="row">
           <div className="col-3">
-            <img src="/images/icon.png" className="icon-img" />
+            <img src="/LeadFresh/images/icon.png" className="icon-img" />
           </div>
 
           <div className="col-6">
